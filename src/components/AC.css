@@ -1,0 +1,85 @@
+.horizontal-scroll-container {
+    position: relative;
+   overflow-x: auto;
+  }
+  .head{
+    margin-top: 4%;
+  }
+  .head h4{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    
+  }
+  .horizontal-scroll {
+
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .contentt{
+    min-width: 100%;
+  }
+  .horizontal-scroll-container::-webkit-scrollbar {
+    height: 5px;
+    width: 3px;
+    background: rgb(0, 0, 0);
+  }
+  .eee::-webkit-scrollbar{
+    width: 0px;
+  }
+  .horizontal-scroll-container::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  .horizontal-scroll-container::-webkit-scrollbar-thumb {
+    background: #ffffff; 
+  }
+  
+  /* Handle on hover */
+  .horizontal-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+  .horizontal-scroll-container::-webkit-scrollbar-thumb:horizontal{
+      background: #ffffff;
+      border-radius: 10px;
+  }
+ 
+  .scroll-button {
+    position: absolute;
+   /* margin-top: 10%; */
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color:white;
+    cursor: pointer;
+  }
+  
+  .scroll-button.left {
+    left: 0;
+  }
+  
+  .scroll-button.right {
+    right: 0;
+  }
+
+  .icon{
+    color: aqua;
+    font-size: 50px;
+    padding: 0 20px;
+  }
+  .c1{
+    margin-top:0%;
+  }
+  .outerdiv{
+    height: 90vh;
+  }
+  @media screen and (max-width:640px) {
+    .outerdiv{
+      height:auto;
+    }
+  }
+    

@@ -1,0 +1,108 @@
+.project1{
+   
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:40px;
+    position: relative;
+   margin-top: 10%;
+    
+}
+.container{
+    height: 500px;
+}
+.img{
+    height: 350px;
+    width: 100%;
+}
+.project1 .left1{
+    text-align: justify;
+    margin: auto;
+    padding:0 2rem;
+    margin-top: 2rem;
+   
+}
+#btn1{
+    border-radius: 25px;
+    display: none;
+    position: absolute;
+  top: 50%;
+  left: 70%;
+
+}
+.right1:hover #btn1 {
+    display: block;
+  }
+  .right1:hover .imge {
+    opacity: 0.5;
+  }
+ 
+  
+  
+  
+.horizontal-scroll-container{
+    height: 84%;
+}
+.project1 .left1 .p{
+    margin: 1.2rem 0;
+}
+.project1 .right1 {
+    max-width: 700px;
+}
+.right1 .img-container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.right1 .img{
+    max-width: 90%;
+    border: 1px solid #333;
+}
+
+@media screen and (max-width:1024px) {
+    .project1{
+      margin-top: 10%;
+        display: grid;
+    grid-template-columns: 1fr;
+   margin-bottom: 10%;
+    height: 300px;
+    }
+   
+    
+    .project1 .right1 {
+        max-width: 370px;
+    }
+    .project1 .right1 .img{
+      width: 412px;
+      aspect-ratio: 3/28;
+      height: 217px;
+      padding-left: 10%;
+    }
+    .container {
+      height: 600px;
+  }
+    #btn1{
+      font-size: 16px;
+        border-radius: 50px;
+        display: none;
+        position: absolute;
+      top:78%;
+      left: 20%;
+    
+    }
+    .right1:hover #btn1 {
+        display: block;
+      }
+      .right1:hover .imge {
+        opacity: 0.5;
+      }
+      .imge{
+        height:"15rem";
+        width:"30rem";
+      }
+}
